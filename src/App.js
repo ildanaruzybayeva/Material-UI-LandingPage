@@ -1,16 +1,24 @@
 import React from "react";
 import "./styles.css";
+import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import theme from "./Theme";
 
-const useStyles = makeStyles({
-  root: {
-    backgroundColor: "red",
-    color: (props) => props.color
-  }
-});
+const App = () => {
+  return (
+    <Grid container direction="column">
+      <Grid item>Navbar </Grid>
+      <Grid item container>
+        <Grid item xs={0} sm={2} />
+        <Grid item xs={12} sm={8}>
+          Content goes here Content goes here Content goes here Content goes
+          here Content goes here Content goes here Content goes here Content
+          goes here Content goes here
+        </Grid>
+        <Grid item xs={0} sm={2} />
+      </Grid>
+    </Grid>
+  );
+};
 
-export default function App() {
-  const classes = useStyles();
-  return <div className="App">Hi</div>;
-}
+export default App;
