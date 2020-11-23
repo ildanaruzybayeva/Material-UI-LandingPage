@@ -15,7 +15,7 @@ const Header = () => {
     <AppBar position="static">
       <Toolbar>
         <Typography className={classes.typographyStyles}>
-          This is dex header
+          This is de header
         </Typography>
         <AllInclusiveOutlinedIcon />
       </Toolbar>
