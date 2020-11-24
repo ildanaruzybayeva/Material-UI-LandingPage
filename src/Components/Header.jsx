@@ -1,6 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import AllInclusiveOutlinedIcon from "@material-ui/icons/AllInclusiveOutlined";
+import HeaderMenu from "./HeaderMenu";
 import React from "react";
 
 const useStyles = makeStyles(() => ({
@@ -18,6 +19,7 @@ const Header = () => {
           This is de header
         </Typography>
         <AllInclusiveOutlinedIcon />
+        <HeaderMenu />
       </Toolbar>
     </AppBar>
   );
